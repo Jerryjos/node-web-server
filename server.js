@@ -43,6 +43,13 @@ app.get('/about',(req,res)=>{
 
   });
 });
+
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    pagetitle:'project page'
+
+  });
+});
 app.listen(port,()=>{
   console.log(`sever is upon port ${port}`);
 });
